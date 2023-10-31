@@ -78,13 +78,16 @@ Name: Toggle Thumbsup
 ```
 
 #### 2. Name/Key: Dark Mode / dark-mode 
-##### Variations
+Variations
+```
 Name: Available   Value: true
 Name: Unavailable Value: false
-
+```
 
 #### 3. Name/Key: Debug / debug
-##### Variations
+Variations
+```
 Name: Available   Value: true
 Name: Unavailable Value: false
+```
 
