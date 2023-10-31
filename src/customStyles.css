@@ -1,0 +1,25 @@
+.mImage1{
+    background: url(./img/people.png) -69px -1px;
+    background-size: 280px;
+    height: 72px;
+    width: 72px;
+}
+.mImage2 {
+    background: url(./img/people.png) -1px -69px;
+    background-size: 280px;
+    height: 72px;
+    width: 72px;
+}
+
+.fImage1 {
+    background: url(./img/people.png) -1px -1px;
+    background-size: 280px;
+    height: 72px;
+    width: 72px;
+}
+.fImage2 {
+    background: url(./img/people.png) -69px -69px;
+    background-size: 280px;
+    height: 72px;
+    width: 72px;
+}
