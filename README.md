@@ -30,6 +30,7 @@ npx serve build
 ```
 
 ### Feature Flags
+>IMPORTANT: Make sure you set/enable the "SDKs using Client-side ID" checkbox in the Client-side SDK availability settings. Read [Making flags available to client-side and mobile SDKs](https://docs.launchdarkly.com/home/creating-flags/feature-flags?site=launchDarkly#making-flags-available-to-client-side-and-mobile-sdks) for details.
 #### 1. Name/Key: toggle details/toggle-details
 ##### Variations
 Name: Light Launcher
