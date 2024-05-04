@@ -1,94 +1,83 @@
-# Sample LaunchDarkly to Google Analytics 4 integration
-### Requirement
+# LaunchDarkly to Google Analytics 4 Integration
+This project demonstrates how to integrate LaunchDarkly with Google Analytics 4 using React.
+
+
+![](./img/stack.jpg)  
+
+
+![](./img/experiment2.jpg)  
+*target rule*
+
+![](./img/experiment3.jpg)  
+*Experimentation*
+
+
+
+
+## Requirement
 * React >=18
 * LaunchDarkly React client SDK
 * Node.js >=18.x
 * [LaunchDarkly Client side ID](https://docs.launchdarkly.com/sdk/concepts/client-side-server-side?site=federal#understanding-the-different-types-of-sdks)
-![](./reactjsdemo.gif)  
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Installation
-1. Create .env file and copy your project clientSideID.
 
-```
-REACT_APP_clientSideID="LD client side ID"
-```
-### Running application
-```
-npm start
-```
+## Getting Started
+### LaunchDarkly Setup
+**Create feature flag:  "toggle details" / toggle-details**
 
-### Build static site
+Variations:
+* Light Launcher
+  ```json
+  {
+    "backgroundImage": "ThumbsUpLight.png",
+    "heroImage": "ThumbsUpLight.png",
+    "heroName": "Light Launcher",
+    "flagKey": "toggle-details",
+    "name": "ThumbsUpLight"
+  }
+  ```
+* Dark Launcher
+  ```json
+  {
+    "backgroundImage": "ThumbsUpDark.png",
+    "heroImage": "ThumbsUpDark.png",
+    "heroName": "Dark Launcher",
+    "flagKey": "toggle-details",
+    "name": "ThumbsUpDark"
+  }
+  ```
+* Toggle
+  ```json
+  {
+    "backgroundImage": "Toggle.png",
+    "heroImage": "Toggle.png",
+    "heroName": "Toggle",
+    "flagKey": "toggle-details",
+    "name": "Toggle"
+  }
+  ```
+* Toggle Thumbsup
+  ```json
+  {
+    "backgroundImage": "ToggleThumbsUp.png",
+    "heroImage": "ToggleThumbsUp.png",
+    "heroName": "Toggle Thumbsup",
+    "flagKey": "toggle-details",
+    "name": "ToggleThumbsUp"
+  }
+  ```
 
-```
-npm run build
-```
+**Create feature flag: "Dark Mode" / dark-mode**
 
-### Run static site
-```
-npx serve build
-```
+variations:
+* Available: true
+* Unavailable: false
 
-### Feature Flags
->IMPORTANT: Make sure you set/enable the "SDKs using Client-side ID" checkbox in the Client-side SDK availability settings. Read [Making flags available to client-side and mobile SDKs](https://docs.launchdarkly.com/home/creating-flags/feature-flags?site=launchDarkly#making-flags-available-to-client-side-and-mobile-sdks) for details.
-#### 1. Name/Key: toggle details/toggle-details
-##### Variations
-Name: Light Launcher
-```
-   {
-  "backgroundImage": "ThumbsUpLight.png",
-  "heroImage": "ThumbsUpLight.png",
-  "heroName": "Light Launcher",
-  "flagKey":"toggle-details",
-  "name": "ThumbsUpLight"
-}
-```
+**Create feature flags:  Debug / debug**
 
-Name: Dark Launcher
-```
-{
-  "backgroundImage": "ThumbsUpDark.png",
-  "heroImage": "ThumbsUpDark.png",
-  "heroName": "Dark Launcher",
-  "flagKey":"toggle-details",
-  "name": "ThumbsUpDark"
-}
-```
-
-Name: Toggle
-```
-{
-  "backgroundImage": "Toggle.png",
-  "heroImage": "Toggle.png",
-  "heroName": "Toggle",
-  "flagKey":"toggle-details",
-  "name": "Toggle"
-}
-```
-
-
-Name: Toggle Thumbsup
-```
-{
-  "backgroundImage": "ToggleThumbsUp.png",
-  "heroImage": "ToggleThumbsUp.png",
-  "heroName": "Toggle Thumbsup",
-  "flagKey":"toggle-details",
-  "name": "ToggleThumbsUp"
-}
-```
-
-#### 2. Name/Key: Dark Mode / dark-mode 
-Variations
-```
-Name: Available   Value: true
-Name: Unavailable Value: false
-```
-
-#### 3. Name/Key: Debug / debug
-Variations
-```
-Name: Available   Value: true
-Name: Unavailable Value: false
-```
+variations:
+* Available: true
+* Unavailable: false
 
